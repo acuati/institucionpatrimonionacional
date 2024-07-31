@@ -1,4 +1,41 @@
-:root {
+nav {
+  background-color: #333;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+
+
+
+/* :root {
   --border-radius: 4px;
   --color-text: #333;
   --color-primary: #7026b9;
@@ -221,4 +258,4 @@ pre code:after,
 pre tt:before,
 pre tt:after {
   content: none;
-}
+} */

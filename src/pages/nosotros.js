@@ -30,10 +30,26 @@ const Nosotros = () => (
         Aspiramos a ser una institución líder en la gestión del patrimonio, reconocida por su compromiso y excelencia
       </p>
     </section> 
+    <StaticImage
+              src="../images/nuestra_historia.jpg"
+              height={300}
+              width={500}
+              quality={95}
+              formats={["AUTO", "WEBP", "AVIF"]}
+              alt="Ejemplo de Patrimonio"
+              style={{ 
+                marginTop: `1.45rem`,
+                marginLeft: `4.00em`,
+                marginRight: `4.00em`,
+                marginBottom: `1.45rem`
+      
+      
+              }}
+            />
 
 
 
-    
+
       
   </Layout>
 )

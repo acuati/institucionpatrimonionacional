@@ -11,6 +11,7 @@ const Header = ({ siteTitle }) => (
       justifyContent: `space-between`,
     }}
   >
+    <p>© {new Date().getFullYear()} - Patrimonio Nacional. Todos los derechos reservados.</p>
     {/* <Link
       to="/"
       style={{

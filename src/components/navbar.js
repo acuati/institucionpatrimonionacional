@@ -4,10 +4,21 @@ import { Link } from "gatsby"
 const Navbar = () => (
   <nav>
     <ul>
-      <li><Link to="/">Inicio</Link></li>
+      <li><Link to="/">Inicio</Link></li>>
+      <li><Link to="/bienvenida">Bienvenida</Link></li>
       <li><Link to="/nosotros">Nosotros</Link></li>
-      <li><Link to="/actividades">Actividades</Link></li>
-      <li><Link to="/contacto">Contacto</Link></li>
+
+      <li><Link to="/consejoadministracion">Consejo de Administración</Link></li>
+      <li><Link to="/actos">Actos oficiales e institucionales</Link></li>
+      <li><Link to="/retratosoficiales">Retratos oficiales</Link></li>
+      
+      <li><Link to="/aplicaciongeneradora">Aplicación generadora de QR</Link></li>
+
+
+
+
+
+
     </ul>
   </nav>
 )

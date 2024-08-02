@@ -11,21 +11,21 @@ import Seo from "../components/seo"
 const Nosotros = () => (
   <Layout>
     <section>
-     <h2>Nuestra historia</h2>
+     <h1>Conoce nuestra historia</h1>
       <p>
         La institución de Patrimonio Nacional se fundó en 1865 con el objetivo de preservar y mantener el patrimonio cultural y natural de nuestra nación
       </p>
     </section>
 
     <section>
-      <h2>Nuestra misión</h2>
+      <h1>Conoce nuestra misión</h1>
       <p>
         Nuestra misión es proteger, conservar y promover el patrimonio cultural y natural para las futuras generaciones
       </p>
     </section>
 
     <section>
-      <h2>Nuestra visión</h2>
+      <h1>Conoce nuestra visión</h1>
       <p>
         Aspiramos a ser una institución líder en la gestión del patrimonio, reconocida por su compromiso y excelencia
       </p>

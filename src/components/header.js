@@ -12,6 +12,9 @@ const Header = ({ siteTitle }) => (
      </div>
     <h1>{siteTitle}</h1>
 
+    <p>Esta es la página de la institución de Patrimonio Nacional donde recogemos todos los aspectos relevantes de nuestra institución.</p>
+
+
   </header>
   </>
 )

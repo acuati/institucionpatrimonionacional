@@ -8,7 +8,7 @@ import Seo from "../components/seo"
 
 
 
-const ConsejoAdministracion = () => (
+const Consejo = () => (
   <Layout>
    <section>
       <h1>Consejo de Administración</h1>
@@ -47,4 +47,4 @@ const ConsejoAdministracion = () => (
 
 export const Head = () => <Seo title="Consejo de Administración" />
 
-export default ConsejoAdministracion
+export default Consejo

@@ -10,13 +10,14 @@ const Navbar = () => (
         <li><Link to="/nosotros">Nosotros</Link></li>
         <li><Link to="/consejo">Consejo de Administración</Link></li>
         <li><Link to="/actos">Actos oficiales e institucionales</Link></li>
-        <li><a href="https://www.casareal.es/ES/Paginas/home.aspx">Casa de S.M. el Rey</a></li>
-        <li><Link to="/retratosoficiales">Retratos oficiales</Link></li>
+        <li><Link to="/casa">Casa de S.M. el Rey</Link></li>
+        
       </ul>
     </nav>
     <nav>
       <ul>
-        <li><a href="https://www.mpr.gob.es/Paginas/index.aspx">Ministerio de la Presidencia</a></li>
+      <li><Link to="/retratosoficiales">Retratos oficiales</Link></li>
+        <li><Link to="/ministerio">Ministerio de la Presidencia</Link></li>
         <li><Link to="/aplicaciongeneradora">Aplicación generadora de QR</Link></li>
       </ul>
     </nav>

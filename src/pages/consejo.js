@@ -1,19 +1,68 @@
-import * as React from "react"
+import React, {useState} from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-
+import Modal from "react-modal";
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
+// Es necesario configurar el elemento root para accesibilidad con react-modal
+Modal.setAppElement('#___gatsby');
 
 
+const Consejo = () => {
+  // Definir estados para los modales
+  const [modalIsOpen, setModalIsOpen] = useState({
+    modal1: false,
+    modal2: false,
+    modal3: false,
+    // Puedes agregar más modales según sea necesario
+  });
 
-const Consejo = () => (
+  // Funciones para abrir y cerrar modales
+  const openModal = (modalName) => {
+    setModalIsOpen((prev) => ({ ...prev, [modalName]: true }));
+  };
+
+  const closeModal = (modalName) => {
+    setModalIsOpen((prev) => ({ ...prev, [modalName]: false }));
+  };
+  return (
   <Layout>
    <section>
       <h1>Consejo de Administración</h1>
       <h2>Miembros natos</h2>
-      <p><strong>ANA DE LA CUEVA FERNÁNDEZ: </strong>PRESIDENTA DE PATRIMONIO NACIONAL</p>
+
+      <div>
+          <button onClick={() => openModal('modal1')}>Leer más sobre Ana de la Cueva Fernández</button>
+          <Modal
+            isOpen={modalIsOpen.modal1}
+            onRequestClose={() => closeModal('modal1')}
+            contentLabel="Ana de la Cueva Fernández"
+            style={{
+              content: {
+                margin: 'auto',
+                maxWidth: '600px',
+                padding: '20px',
+              },
+            }}
+          >
+            <h2>ANA DE LA CUEVA FERNÁNDEZ: PRESIDENTA DE PATRIMONIO NACIONAL</h2>
+            <StaticImage
+              src="../images/presidentapatrimonio.jpg"
+              height={300}
+              width={500}
+              quality={95}
+              formats={["AUTO", "WEBP", "AVIF"]}
+              alt="Ejemplo de Patrimonio"
+            />
+            <p>Es licenciada en Ciencias Económicas y Empresariales por la Universidad Autónoma de Madrid en la especialidad de Economía Cuantitativa.</p>
+            <p>Ha desarrollado toda su carrera profesional en el Ministerio de Asuntos Económicos y Transformación Digital...</p>
+            <button onClick={() => closeModal('modal1')}>Cerrar</button>
+          </Modal>
+        </div>
+
+
+      {/* <p><strong>ANA DE LA CUEVA FERNÁNDEZ: </strong>PRESIDENTA DE PATRIMONIO NACIONAL</p>
       <StaticImage
               src="../images/presidentapatrimonio.jpg"
               height={300}
@@ -35,7 +84,7 @@ const Consejo = () => (
             <p>Ha sido secretaria de Estado de Economía y Apoyo a la Empresa desde junio de 2018 hasta mayo de 2021, ostentando la Secretaría de la Comisión Delegada del Gobierno para Asuntos Económicos.</p>
             <p>Anteriormente había desempeñado diversos cargos de responsabilidad en el Ministerio, en la Dirección General de Política Comercial e Inversiones Exteriores, la Dirección General de Política Económica y la Dirección General del Tesoro y fue directora del Gabinete del secretario de Estado de Economía.</p>
             <p>Ha sido miembro de los siguientes Consejos de Administración e instituciones nacionales e internacionales: consejera de la Casa de la Moneda y Timbre, consejera de Expansión Exterior (actualmente ICEX), Consejera de la Compañía Española de Crédito a la Exportación (CESCE), consejera de RENFE, consejera de la Sociedad Estatal de Participaciones Industriales (SEPI), consejera de la Autoridad Macroprudencial Consejo de Estabilidad Financiera (AMCESFI), gobernadora alterna por España en el Grupo Banco Mundial, en el Banco Interamericano de Desarrollo, el Banco Centroamericano de Integración Económica, el Banco Asiático de Desarrollo, el Banco Asiático para Inversión en Infraestructuras, el Banco Africano de Desarrollo y el Banco Europeo de Reconstrucción y Desarrollo, presidenta de la Comisión para la prevención del blanqueo de capitales y las infracciones monetarias, miembro de la Comisión de Coordinación del Plan de Recuperación, Transformación y Resiliencia.</p>
-
+ */}
 
 
 
@@ -381,7 +430,8 @@ const Consejo = () => (
    
    
   </Layout>
-)
+  )
+}
 
 
 export const Head = () => <Seo title="Consejo de Administración" />

@@ -36,8 +36,9 @@ h2{
   margin-right: 2em;
 }
 h3 {
-  margin-left: 5em;
-  margin-right: 2em;
+  margin-top: 2em;
+  margin-left: 2em;
+  
 }
 h4 {
   margin-left: 25em;
@@ -79,6 +80,11 @@ nav ul li {
 nav ul li a {
   color: white;
   text-decoration: none;
+}
+button{
+  margin-top: 2em;
+  margin-bottom: 4em;
+  margin-left: 10em;
 }
 
 footer {

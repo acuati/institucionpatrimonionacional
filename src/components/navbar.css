@@ -1,0 +1,95 @@
+/* Estilo del contenedor del navbar */
+.navbar {
+    background-color: #333;
+    padding: 10px 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Estilo del icono hamburguesa */
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+  
+  /* Estilos para abrir/cerrar el menú hamburguesa */
+  .bar.open:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  .bar.open:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .bar.open:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  
+  /* Estilo para los enlaces de navegación */
+  .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+  }
+  
+  .nav-links.open {
+    max-height: 500px; /* Ajusta esto según la cantidad de enlaces */
+  }
+  
+  .nav-links li {
+    margin: 15px 0;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+  }
+  
+  .nav-links a:hover {
+    color: #ddd;
+  }
+  
+  /* Estilo para el menú en pantallas más grandes */
+  @media(min-width: 768px) {
+    .hamburger {
+      display: none;
+    }
+  
+    .nav-links {
+      position: static;
+      max-height: none;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+  
+    .nav-links li {
+      margin: 0 15px;
+    }
+  }
+  

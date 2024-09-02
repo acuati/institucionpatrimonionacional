@@ -12,14 +12,15 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
+      
       <div className="hamburger" onClick={toggleMenu}>
         <div className={`bar ${isOpen ? "open" : ""}`}></div>
         <div className={`bar ${isOpen ? "open" : ""}`}></div>
         <div className={`bar ${isOpen ? "open" : ""}`}></div>
       </div>
+     
+      
       <ul className={`nav-links ${isOpen ? "open" : ""}`}>
-        <li><Link to="/">Inicio</Link></li>
-        <li><Link to="/bienvenida">Bienvenida</Link></li>
         <li><Link to="/nosotros">Nosotros</Link></li>
         <li><Link to="/consejo">Consejo de Administración</Link></li>
         <li><Link to="/actos">Actos oficiales e institucionales</Link></li>
@@ -28,6 +29,9 @@ const Navbar = () => {
         <li><Link to="/ministerio">Ministerio de la Presidencia</Link></li>
         <li><Link to="/aplicaciongeneradora">Aplicación generadora de QR</Link></li>
       </ul>
+      
+     
+      
     </nav>
   );
 };

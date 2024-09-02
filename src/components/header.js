@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image"
 
 const Header = ({ siteTitle }) => (
@@ -15,6 +16,11 @@ const Header = ({ siteTitle }) => (
               alt="Logotipo de Patrimonio Nacional"
            />
      </div>
+
+    <li><Link to="/">Inicio</Link></li>
+    <li><Link to="/bienvenida">Bienvenida</Link></li>
+
+   
     </p>
 
 

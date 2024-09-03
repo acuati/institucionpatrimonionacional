@@ -21,9 +21,7 @@ const Navbar = () => {
      
       
       <ul className={`nav-links ${isOpen ? "open" : ""}`}>
-        <li><Link to="/nosotros">Nosotros</Link></li>
-        <li><Link to="/consejo">Consejo de Administración</Link></li>
-        <li><Link to="/actos">Actos oficiales e institucionales</Link></li>
+        
         <li><Link to="/casa">Casa de S.M. el Rey</Link></li>
         <li><Link to="/retratosoficiales">Retratos oficiales</Link></li>
         <li><Link to="/ministerio">Ministerio de la Presidencia</Link></li>

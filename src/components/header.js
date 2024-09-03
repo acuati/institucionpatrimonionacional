@@ -18,8 +18,11 @@ const Header = ({ siteTitle }) => (
      </div>
 
     <li><Link to="/">Inicio</Link></li>
+   
+    <li><Link to="/nosotros">Nosotros</Link></li>
     <li><Link to="/bienvenida">Bienvenida</Link></li>
-
+        <li><Link to="/consejo">Consejo de Administración</Link></li>
+        <li><Link to="/actos">Actos oficiales e institucionales</Link></li>
    
     </p>
 

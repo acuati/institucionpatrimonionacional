@@ -6,6 +6,7 @@
  */
 
 import * as React from "react"
+import { Link } from "gatsby";
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
@@ -33,10 +34,13 @@ const Layout = ({ children }) => {
         <main>
           {children}
           </main>
+          <li><Link to="/consejo">Consejo de Administración</Link></li>
+    <li><Link to="/actos">Actos oficiales e institucionales</Link></li>
 
           <Navbar /> 
           
     <Footer></Footer>
+
     </div>
       
     </>

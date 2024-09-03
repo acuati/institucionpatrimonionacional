@@ -34,8 +34,15 @@ const Layout = ({ children }) => {
         <main>
           {children}
           </main>
-          <li><Link to="/consejo">Consejo de Administración</Link></li>
-    <li><Link to="/actos">Actos oficiales e institucionales</Link></li>
+          <p>
+            <ul>
+            <li><Link to="/consejo">Consejo de Administración</Link></li>
+            <li><Link to="/actos">Actos oficiales e institucionales</Link></li>
+            
+            </ul>
+            
+          </p>
+          
 
           <Navbar /> 
           

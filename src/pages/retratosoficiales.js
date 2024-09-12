@@ -4,6 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Card from "../components/card" // Importar el nuevo componente de tarjeta
 
 
 
@@ -12,14 +13,76 @@ const RetratosOficiales = () => (
   <Layout>
    <section>
       <h1>Retratos oficiales</h1>
+    
       <h2>Retrato oficial conjunto de los 4 miembros de la familia real española, más cercana al trono:</h2>
       {/* <h2>Retratos de SS.MM.</h2> */}
       
       
       {/* <p>Aqui irá un retrato conjunto de la familia real</p> */}
+      <Card>
+        <StaticImage
+          src="../images/los4defamiliarealespañolamascercanaaltrono.jpg"
+          height={200}
+          width={200}
+          quality={95}
+          formats={["AUTO", "WEBP", "AVIF"]}
+          alt="Familia Real Española"
+        />
+        {/* <p>En el que salen SS.MM. y S.A.R.</p> */}
+        <p>En el que salen:</p>
+      </Card>
+      
+      <h3>SS.MM. (Sus Majestades):</h3>
 
+      <Card>
+        <h4>S.M. / SU MAJESTAD: EL REY DE ESPAÑA, DON FELIPE VI DE BORBÓN Y GRECIA</h4>
+        <StaticImage
+          src="../images/smelrey.jpg"
+          height={200}
+          width={200}
+          quality={95}
+          formats={["AUTO", "WEBP", "AVIF"]}
+          alt="El Rey"
+        />
+      </Card>
 
-      <StaticImage
+      <Card>
+        <h4>S.M. / SU MAJESTAD: LA REINA CONSORTE DE ESPAÑA, DOÑA LETIZIA ORTIZ ROCASOLANO</h4>
+        <StaticImage
+          src="../images/smlareina.jpg"
+          height={200}
+          width={200}
+          quality={95}
+          formats={["AUTO", "WEBP", "AVIF"]}
+          alt="La Reina"
+        />
+      </Card>
+      <h3>  SS. AA. RR.(Sus Altezas Reales):</h3>
+      <Card>
+        <h4>S.A.R. / SU ALTEZA REAL: LA PRINCESA DE ASTURIAS, DOÑA LEONOR DE BORBÓN Y ORTIZ</h4>
+        <StaticImage
+          src="../images/sarprincesaasturias.jpg"
+          height={200}
+          width={200}
+          quality={95}
+          formats={["AUTO", "WEBP", "AVIF"]}
+          alt="La Princesa de Asturias"
+        />
+      </Card>
+
+      <Card>
+        <h4>S.A.R. / SU ALTEZA REAL: LA INFANTA DE ESPAÑA, DOÑA SOFÍA DE BORBÓN Y ORTIZ</h4>
+        <StaticImage
+          src="../images/sarinfantadonasofia.jpg"
+          height={200}
+          width={200}
+          quality={95}
+          formats={["AUTO", "WEBP", "AVIF"]}
+          alt="La Infanta Sofía"
+        />
+      </Card>
+
+      {/* <StaticImage
               src="../images/los4defamiliarealespañolamascercanaaltrono.jpg"
               height={200}
               width={200}
@@ -113,7 +176,7 @@ const RetratosOficiales = () => (
       
               }}
             />
-      
+       */}
 
        
 

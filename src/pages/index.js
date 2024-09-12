@@ -22,6 +22,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
+      
       <section className="slider-container">
         <Slider {...settings}>
           <div>

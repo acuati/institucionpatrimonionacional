@@ -19,7 +19,7 @@ const RetratosOficiales = () => (
       
       
       {/* <p>Aqui irá un retrato conjunto de la familia real</p> */}
-      <Card>
+      
         <StaticImage
           src="../images/los4defamiliarealespañolamascercanaaltrono.jpg"
           height={200}
@@ -27,14 +27,15 @@ const RetratosOficiales = () => (
           quality={95}
           formats={["AUTO", "WEBP", "AVIF"]}
           alt="Familia Real Española"
+
         />
         {/* <p>En el que salen SS.MM. y S.A.R.</p> */}
         <p>En el que salen:</p>
-      </Card>
+      
       
       <h3>SS.MM. (Sus Majestades):</h3>
 
-      <Card>
+      
         <h4>S.M. / SU MAJESTAD: EL REY DE ESPAÑA, DON FELIPE VI DE BORBÓN Y GRECIA</h4>
         <StaticImage
           src="../images/smelrey.jpg"
@@ -44,9 +45,9 @@ const RetratosOficiales = () => (
           formats={["AUTO", "WEBP", "AVIF"]}
           alt="El Rey"
         />
-      </Card>
+      
 
-      <Card>
+     
         <h4>S.M. / SU MAJESTAD: LA REINA CONSORTE DE ESPAÑA, DOÑA LETIZIA ORTIZ ROCASOLANO</h4>
         <StaticImage
           src="../images/smlareina.jpg"
@@ -56,9 +57,9 @@ const RetratosOficiales = () => (
           formats={["AUTO", "WEBP", "AVIF"]}
           alt="La Reina"
         />
-      </Card>
+      
       <h3>  SS. AA. RR.(Sus Altezas Reales):</h3>
-      <Card>
+      
         <h4>S.A.R. / SU ALTEZA REAL: LA PRINCESA DE ASTURIAS, DOÑA LEONOR DE BORBÓN Y ORTIZ</h4>
         <StaticImage
           src="../images/sarprincesaasturias.jpg"
@@ -68,9 +69,9 @@ const RetratosOficiales = () => (
           formats={["AUTO", "WEBP", "AVIF"]}
           alt="La Princesa de Asturias"
         />
-      </Card>
+      
 
-      <Card>
+      
         <h4>S.A.R. / SU ALTEZA REAL: LA INFANTA DE ESPAÑA, DOÑA SOFÍA DE BORBÓN Y ORTIZ</h4>
         <StaticImage
           src="../images/sarinfantadonasofia.jpg"
@@ -80,7 +81,7 @@ const RetratosOficiales = () => (
           formats={["AUTO", "WEBP", "AVIF"]}
           alt="La Infanta Sofía"
         />
-      </Card>
+      
 
       {/* <StaticImage
               src="../images/los4defamiliarealespañolamascercanaaltrono.jpg"
